@@ -1,0 +1,45 @@
+.persoCard {
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in;
+  margin-bottom: 20px;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+  background-color: #393839;
+}
+
+.persoCard .card__overlay {
+  opacity: 1;
+}
+
+.overlay__text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button {
+  background-color: #f05328;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
